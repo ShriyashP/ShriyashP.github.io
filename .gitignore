@@ -1,0 +1,16 @@
+# Ignore project folder and its contents
+Projects/
+
+# Ignore specific file types globally
+*.png
+*.pdf
+*.html
+*.css
+
+# Ignore specific HTML files (if needed)
+Aboutme.html
+Contact.html
+education.html
+Experience.html
+insidepage.html
+inside page.css

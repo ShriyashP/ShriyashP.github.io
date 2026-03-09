@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Shriyash Patil — Software Engineer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Shriyash Patil — Software Engineer specializing in full-stack development and AI/ML systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.08);
+      --accent: #7fff6e;
+      --accent2: #4fd1c5;
+      --text: #e8e8f0;
+      --muted: #8888a0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+    /* animated background grid */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(127,255,110,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(127,255,110,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: gridPan 30s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes gridPan {
+      0% { background-position: 0 0; }
+      100% { background-position: 60px 60px; }
+    }
+    /* glow orbs */
+    .orb {
+      position: fixed; border-radius: 50%;
+      filter: blur(80px); pointer-events: none; opacity: 0.12;
+    }
+    .orb-1 { width: 500px; height: 500px; background: var(--accent); top: -150px; right: -100px; animation: float1 12s ease-in-out infinite; }
+    .orb-2 { width: 400px; height: 400px; background: var(--accent2); bottom: -120px; left: -80px; animation: float2 15s ease-in-out infinite; }
+    @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-30px,30px)} }
+    @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(20px,-20px)} }
+
+    #main {
+      position: relative; z-index: 10;
+      text-align: center;
+      padding: 2rem;
+      max-width: 620px;
+      animation: fadeUp 0.8s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      animation: fadeUp 0.8s 0.1s cubic-bezier(0.16,1,0.3,1) both;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 7vw, 3.8rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 0.3em;
+      animation: fadeUp 0.8s 0.15s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    h1 em {
+      font-style: italic;
+      background: linear-gradient(to right, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+    .title-line {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.8rem;
+      animation: fadeUp 0.8s 0.2s cubic-bezier(0.16,1,0.3,1) both;
+    }
+
+    .bio {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+      animation: fadeUp 0.8s 0.25s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    .bio strong { color: var(--text); font-weight: 500; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      animation: fadeUp 0.8s 0.3s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    nav a {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      padding: 0.55rem 1.1rem; border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      transition: all 0.22s;
+    }
+    nav a:hover {
+      color: #fff; border-color: rgba(127,255,110,0.4);
+      background: rgba(127,255,110,0.06);
+      transform: translateY(-2px);
+    }
+    nav a .icon { font-size: 0.9rem; }
+
+    .links {
+      display: flex; justify-content: center; gap: 1.5rem;
+      animation: fadeUp 0.8s 0.35s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    .links a {
+      font-family: 'DM Mono', monospace; font-size: 0.75rem;
+      letter-spacing: 0.06em; color: var(--muted); text-decoration: none;
+      transition: color 0.2s; position: relative;
+    }
+    .links a::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+      height: 1px; background: var(--accent); transform: scaleX(0);
+      transition: transform 0.2s;
+    }
+    .links a:hover { color: var(--accent); }
+    .links a:hover::after { transform: scaleX(1); }
+    .links span { color: var(--border); }
+
+    footer {
+      position: fixed; bottom: 1.5rem; left: 0; right: 0;
+      text-align: center;
+      font-family: 'DM Mono', monospace; font-size: 0.68rem;
+      color: rgba(136,136,160,0.4); letter-spacing: 0.06em;
+      animation: fadeUp 0.8s 0.5s cubic-bezier(0.16,1,0.3,1) both;
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div id="main">
+    <p class="eyebrow">Based in San Jose, CA</p>
+    <h1>Shriyash<br><em>Patil</em></h1>
+    <p class="title-line">Software Engineer &nbsp;·&nbsp; Full-Stack &amp; AI/ML</p>
+    <p class="bio">
+      M.S. Software Engineering, <strong>Cal State Fullerton</strong>. Building <strong>full-stack AI systems</strong> at Mission Action — from real-time event pipelines to LLM-powered applications. Open-source contributor to <strong>NVIDIA AI-Dynamo</strong> and <strong>Triton Inference Server</strong>.
+    </p>
+
+    <nav>
+      <a href="Aboutme.html"><span class="icon">⊹</span> About</a>
+      <a href="education.html"><span class="icon">◎</span> Education</a>
+      <a href="Projects.html"><span class="icon">⌥</span> Projects</a>
+      <a href="Experience.html"><span class="icon">◈</span> Experience</a>
+    </nav>
+
+    <div class="links">
+      <a href="https://www.linkedin.com/in/shriyash-patil-073a09b9/" target="_blank">LinkedIn</a>
+      <span>·</span>
+      <a href="https://github.com/ShriyashP" target="_blank">GitHub</a>
+      <span>·</span>
+      <a href="assets/Shriyash_S_Patil_Resume.pdf" target="_blank">Resume</a>
+      <span>·</span>
+      <a href="mailto:shriyash81@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Shriyash Patil</footer>
+</body>
+</html>

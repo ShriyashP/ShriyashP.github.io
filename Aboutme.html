@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Shriyash Patil</title>
+  <link rel="stylesheet" href="inside page.css">
+  <style>
+    .profile-block {
+      display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; flex-wrap: wrap;
+    }
+    .profile-block img {
+      width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+      border: 2px solid rgba(127,255,110,0.3); flex-shrink: 0;
+    }
+    .profile-text h2 {
+      font-family: 'DM Serif Display', serif; font-size: 1.6rem; font-weight: 400;
+      color: #fff; margin-bottom: 0.25rem;
+    }
+    .profile-text .role {
+      font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .profile-text p { color: var(--muted); font-size: 0.95rem; line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 0.5rem; }
+    .skill-item {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      padding: 0.65rem 1rem; font-family: 'DM Mono', monospace; font-size: 0.75rem;
+      color: var(--muted); letter-spacing: 0.04em;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .skill-item::before { content: '◆'; color: var(--accent); font-size: 0.5rem; }
+    .os-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .os-link {
+      font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.05em;
+      color: var(--accent2); text-decoration: none; padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(79,209,197,0.25); border-radius: 999px;
+      background: rgba(79,209,197,0.05); transition: all 0.2s;
+    }
+    .os-link:hover { background: rgba(79,209,197,0.12); }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" class="back-link">Home</a>
+    <nav>
+      <ul>
+        <li><a href="Aboutme.html" class="active">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="wrapper">
+    <h1 class="major">About Me</h1>
+    <p class="page-subtitle">Engineer, builder, open-source contributor</p>
+
+    <div class="profile-block">
+      <img src="assets/Grad_pic_01.JPEG" alt="Shriyash Patil" onerror="this.style.display='none'">
+      <div class="profile-text">
+        <h2>Shriyash Patil</h2>
+        <p class="role">Software Development Engineer · Mission Action</p>
+        <p>I'm a software engineer based in San Jose, CA with a background spanning full-stack development, distributed systems, and AI/ML. I completed my M.S. in Software Engineering at Cal State Fullerton in January 2025 and have been building production systems at Mission Action since July 2025.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>What I Do</h3>
+      <p style="margin-top:0.6rem">At Mission Action I work on the Rapid Response Network — a high-throughput event pipeline processing 5,000+ daily events at 120ms p99 latency with 99.9% delivery reliability. My work spans backend API design, real-time infrastructure, and integrating AI capabilities into production workflows.</p>
+      <p style="margin-top:0.8rem">I'm also an open-source contributor with merged PRs on <strong style="color:#fff">NVIDIA AI-Dynamo</strong> and <strong style="color:#fff">NVIDIA Triton Inference Server</strong> — two of NVIDIA's core AI infrastructure projects.</p>
+    </div>
+
+    <p class="section-label">Open Source Contributions</p>
+    <div class="card">
+      <h3>NVIDIA — Merged Pull Requests</h3>
+      <div class="os-links" style="margin-top:0.75rem">
+        <a href="https://github.com/ai-dynamo" target="_blank" class="os-link">AI-Dynamo ↗</a>
+        <a href="https://github.com/triton-inference-server" target="_blank" class="os-link">Triton Inference Server ↗</a>
+      </div>
+    </div>
+
+    <p class="section-label">Technical Skills</p>
+    <div class="card">
+      <div class="skills-grid">
+        <span class="skill-item">Python</span>
+        <span class="skill-item">TypeScript / JavaScript</span>
+        <span class="skill-item">Next.js / React</span>
+        <span class="skill-item">Node.js</span>
+        <span class="skill-item">LangChain</span>
+        <span class="skill-item">PostgreSQL / SQL</span>
+        <span class="skill-item">Docker &amp; CI/CD</span>
+        <span class="skill-item">REST APIs</span>
+        <span class="skill-item">scikit-learn</span>
+        <span class="skill-item">ChromaDB</span>
+        <span class="skill-item">Firebase</span>
+        <span class="skill-item">C / Embedded Systems</span>
+        <span class="skill-item">Git &amp; GitHub</span>
+        <span class="skill-item">Selenium</span>
+      </div>
+    </div>
+
+    <p class="section-label">Get In Touch</p>
+    <div class="card">
+      <p>I'm always open to interesting projects and conversations. Reach me at <a href="mailto:shriyash81@gmail.com" style="color:var(--accent)">shriyash81@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/shriyash-patil-073a09b9/" target="_blank" style="color:var(--accent)">LinkedIn</a>.</p>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <a href="https://www.linkedin.com/in/shriyash-patil-073a09b9/" target="_blank">&copy; 2025 Shriyash Patil</a>
+  </footer>
+</body>
+</html>
