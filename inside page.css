@@ -116,6 +116,14 @@ h1.major::after {
   padding: 0.2rem 0 0.2rem 1.2rem; position: relative;
 }
 .card ul li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; }
+.card-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.85rem; }
+.card-link {
+  font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.05em;
+  color: var(--accent); text-decoration: none; padding: 0.25rem 0.65rem;
+  border: 1px solid rgba(127,255,110,0.25); border-radius: 999px;
+  background: rgba(127,255,110,0.05); transition: all 0.2s;
+}
+.card-link:hover { background: rgba(127,255,110,0.12); border-color: rgba(127,255,110,0.4); }
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 .tag {
   font-family: 'DM Mono', monospace; font-size: 0.68rem;
@@ -135,6 +143,10 @@ footer#footer a:hover { color: var(--accent); }
 
 @media (max-width: 640px) {
   #wrapper { padding: 2.5rem 1.25rem 4rem; }
-  header#header { padding: 0 1.25rem; }
+  header#header { padding: 0 1rem; flex-wrap: wrap; height: auto; min-height: var(--header-h); padding-top: 0.75rem; padding-bottom: 0.75rem; }
+  header#header nav ul { flex-wrap: wrap; justify-content: flex-end; }
+  header#header nav ul li a { font-size: 0.68rem; padding: 0.35rem 0.65rem; }
   .card { padding: 1.25rem 1.25rem; }
+  .card-header { flex-direction: column; align-items: flex-start; }
+  .skills-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 }

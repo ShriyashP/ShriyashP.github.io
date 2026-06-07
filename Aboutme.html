@@ -22,7 +22,7 @@
       text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
     }
     .profile-text p { color: var(--muted); font-size: 0.95rem; line-height: 1.75; }
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 0.5rem; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; margin-top: 0.5rem; }
     .skill-item {
       background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
       padding: 0.65rem 1rem; font-family: 'DM Mono', monospace; font-size: 0.75rem;
@@ -61,23 +61,23 @@
       <img src="assets/Grad_pic_01.JPEG" alt="Shriyash Patil" onerror="this.style.display='none'">
       <div class="profile-text">
         <h2>Shriyash Patil</h2>
-        <p class="role">Software Development Engineer · Mission Action</p>
-        <p>I'm a software engineer based in San Jose, CA with a background spanning full-stack development, distributed systems, and AI/ML. I completed my M.S. in Software Engineering at Cal State Fullerton in January 2025 and have been building production systems at Mission Action since July 2025.</p>
+        <p class="role">Software Engineer · Mission Action</p>
+        <p>Software engineer based in San Francisco with a background in full-stack development, distributed systems, and AI/ML. M.S. in Software Engineering from Cal State Fullerton (2025). Building production backend systems and LLM-powered applications at Mission Action.</p>
       </div>
     </div>
 
     <div class="card">
       <h3>What I Do</h3>
-      <p style="margin-top:0.6rem">At Mission Action I work on the Rapid Response Network — a high-throughput event pipeline processing 5,000+ daily events at 120ms p99 latency with 99.9% delivery reliability. My work spans backend API design, real-time infrastructure, and integrating AI capabilities into production workflows.</p>
-      <p style="margin-top:0.8rem">I'm also an open-source contributor with merged PRs on <strong style="color:#fff">NVIDIA AI-Dynamo</strong> and <strong style="color:#fff">NVIDIA Triton Inference Server</strong> — two of NVIDIA's core AI infrastructure projects.</p>
+      <p style="margin-top:0.6rem">At Mission Action I build Python backend services with Redis, Celery, and PostgreSQL — integrating Twilio for real-time notifications and deploying on AWS with Docker and GitHub Actions CI/CD.</p>
+      <p style="margin-top:0.8rem">Outside work, I contribute to open-source AI infrastructure — merged PRs on <strong style="color:#fff">NVIDIA AI-Dynamo</strong> and <strong style="color:#fff">PyTorch Tutorials</strong> — and ship personal projects spanning RAG pipelines, data analytics, and H-1B sponsorship tools.</p>
     </div>
 
     <p class="section-label">Open Source Contributions</p>
     <div class="card">
-      <h3>NVIDIA — Merged Pull Requests</h3>
+      <h3>Merged Pull Requests</h3>
       <div class="os-links" style="margin-top:0.75rem">
-        <a href="https://github.com/ai-dynamo" target="_blank" class="os-link">AI-Dynamo ↗</a>
-        <a href="https://github.com/triton-inference-server" target="_blank" class="os-link">Triton Inference Server ↗</a>
+        <a href="https://github.com/ai-dynamo/dynamo/pull/1580" target="_blank" rel="noopener" class="os-link">NVIDIA AI-Dynamo PR #1580 ↗</a>
+        <a href="https://github.com/pytorch/tutorials/pull/3821" target="_blank" rel="noopener" class="os-link">PyTorch Tutorials PR #3821 ↗</a>
       </div>
     </div>
 
@@ -85,30 +85,37 @@
     <div class="card">
       <div class="skills-grid">
         <span class="skill-item">Python</span>
-        <span class="skill-item">TypeScript / JavaScript</span>
-        <span class="skill-item">Next.js / React</span>
+        <span class="skill-item">C++</span>
+        <span class="skill-item">CUDA C++</span>
+        <span class="skill-item">Django</span>
+        <span class="skill-item">FastAPI</span>
+        <span class="skill-item">Flask</span>
         <span class="skill-item">Node.js</span>
+        <span class="skill-item">React</span>
+        <span class="skill-item">PostgreSQL</span>
+        <span class="skill-item">MongoDB</span>
+        <span class="skill-item">Redis</span>
+        <span class="skill-item">Celery</span>
+        <span class="skill-item">Kafka</span>
+        <span class="skill-item">Docker</span>
+        <span class="skill-item">Kubernetes</span>
+        <span class="skill-item">Terraform</span>
+        <span class="skill-item">AWS</span>
+        <span class="skill-item">GitHub Actions</span>
         <span class="skill-item">LangChain</span>
-        <span class="skill-item">PostgreSQL / SQL</span>
-        <span class="skill-item">Docker &amp; CI/CD</span>
-        <span class="skill-item">REST APIs</span>
-        <span class="skill-item">scikit-learn</span>
-        <span class="skill-item">ChromaDB</span>
-        <span class="skill-item">Firebase</span>
-        <span class="skill-item">C / Embedded Systems</span>
-        <span class="skill-item">Git &amp; GitHub</span>
-        <span class="skill-item">Selenium</span>
+        <span class="skill-item">PyTorch</span>
+        <span class="skill-item">OpenCV</span>
       </div>
     </div>
 
     <p class="section-label">Get In Touch</p>
     <div class="card">
-      <p>I'm always open to interesting projects and conversations. Reach me at <a href="mailto:shriyash81@gmail.com" style="color:var(--accent)">shriyash81@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/shriyash-patil-073a09b9/" target="_blank" style="color:var(--accent)">LinkedIn</a>.</p>
+      <p>Reach me at <a href="mailto:shriyash81@gmail.com" style="color:var(--accent)">shriyash81@gmail.com</a>, connect on <a href="https://www.linkedin.com/in/shriyashpatil" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn</a>, or browse my code on <a href="https://github.com/ShriyashP" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a>.</p>
     </div>
   </div>
 
   <footer id="footer">
-    <a href="https://www.linkedin.com/in/shriyash-patil-073a09b9/" target="_blank">&copy; 2025 Shriyash Patil</a>
+    <a href="https://www.linkedin.com/in/shriyashpatil" target="_blank" rel="noopener">&copy; 2026 Shriyash Patil</a>
   </footer>
 </body>
 </html>
